@@ -1,0 +1,2 @@
+# Tell Heroku how to start the app
+web: node index.js 
