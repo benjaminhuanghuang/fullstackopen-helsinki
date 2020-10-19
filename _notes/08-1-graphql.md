@@ -11,3 +11,15 @@
 
 
  所有 GraphQL 应用的核心是一个schema ，它描述了客户端和服务器之间发送的数据
+ ```
+ type Query {
+  personCount: Int!
+  allPersons: [Person!]!
+  findPerson(name: String!): Person
+}
+```
+Query描述了三种不同的查询:
+- Personcount 返回一个整数，
+- allPersons 返回一个Person 对象列表，该列表不包含任何null-值
+- findPerson 通过一个字符串参数并返回一个Person 对象 or null
+
